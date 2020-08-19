@@ -16,7 +16,7 @@ void Dat2Root() {
    TFile *output = new TFile("output.root","RECREATE");
 
 // Initializing root histogram (TH1)
-// If MIDAS binning is not 1 keV/bin, edit number of bins and maximum!
+// If MTSort binning is not 1 keV/bin, edit number of bins and maximum!
    Float_t x,y;
    Int_t nlines = 0;
    TH1F *myhist = new TH1F("myhist","Data from ascii file",16384,0,16383);
