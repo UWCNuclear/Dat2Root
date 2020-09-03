@@ -1,5 +1,5 @@
 # Dat2Root
-Converts an ASCII file to a ROOT histogram.
+Convert an ASCII file to a ROOT histogram.
 
 Run in the command line with:
 
