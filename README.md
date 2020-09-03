@@ -1,27 +1,40 @@
 # Dat2Root
 Convert an ASCII file to a ROOT histogram.
 
-Run in the command line with:
+The script includes the instructions on how to run it in ROOT/GRSISort.
+
+It has many commented lines to walk you through the script.
+
+It also includes several (optional) formatting commands with which you should familiarize yourself.
+
+The goal of this script is to convert MTSort spectra to ROOT, and also to start getting familiar with ROOT scripts/macros.
+
+To use Dat2Root, you should first save your MTSort spectrum in ASCII format (for example: input.dat).
+
+In Dat2Root.C, you should edit the input and output file names. Whenever you edit a script, you should close ROOT/GRSISort to run it again.
+
+To run Dat2Root, you type in the command line:
 
 grsisort -l Dat2Root.C
 
-
-or with:
-
+or:
 
 grsisort -l
 
 .x Dat2Root.C
 
+Also, the above 'grsisort' can be replaced with 'root' - and it should work just fine!
 
-or with:
+After Dat2Root has created the output file, you close GRSISort by typing in the command line:
 
+.q
 
-grsisort -l
+To open the output file (for example: output.root), you type in the command line:
 
-.L Dat2Root3.C
+grsisort -l output.root
 
-Dat2Root3("somefilename.dat")
+.ls    (to see the list of everything that is in your ROOT file)
 
+myhist->Draw()    (to draw the TH1 histogram that you just created) 
 
-Also, all the above 'grsisort' can be replaced with 'root' - and it should work just fine!
+And you are ready to examine your histogram and fit peaks in GRSISort!
