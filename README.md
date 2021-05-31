@@ -9,7 +9,7 @@ It also includes several (optional) formatting commands with which you should fa
 
 The goal of this script is to convert MTSort spectra to ROOT, and also to start getting familiar with ROOT scripts/macros.
 
-To use Dat2Root, you should first save your MTSort spectrum in ASCII format (for example: input.dat).
+To use Dat2Root, you should first save your MTSort spectrum in ASCII format with two columns (for example: input.dat).
 
 In Dat2Root.C, you should edit the input and output file names. Whenever you edit a script, you should close ROOT/GRSISort to run it again.
 
