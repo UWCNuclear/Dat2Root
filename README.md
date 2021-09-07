@@ -15,26 +15,30 @@ In Dat2Root.C, you should edit the input and output file names. Whenever you edi
 
 To run Dat2Root, you type in the command line:
 
-grsisort -l Dat2Root.C
+      grsisort -l Dat2Root.C
 
 or:
 
-grsisort -l
+      grsisort -l
 
-.x Dat2Root.C
+      .x Dat2Root.C
 
 Also, the above 'grsisort' can be replaced with 'root' - and it should work just fine!
 
 After Dat2Root has created the output file, you close GRSISort by typing in the command line:
 
-.q
+      .q
 
 To open the output file (for example: output.root), you type in the command line:
 
-grsisort -l output.root
+      grsisort -l output.root
 
-.ls    (to see the list of everything that is in your ROOT file)
+To see the list of everything that is in your ROOT file:
 
-myhist->Draw()    (to draw the TH1 histogram that you just created) 
+      .ls
+
+To draw the TH1 histogram that you just created:
+
+      myhist->Draw() 
 
 And you are ready to examine your histogram and fit peaks in GRSISort!
